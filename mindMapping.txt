@@ -1,0 +1,16 @@
+create json object for questions  (done)
+start creating html  (done)
+add dummy data (done)
+make style (done)
+fetch number of questions from json object (done)
+show questions count and category  (done)
+set number of right and wrong answers 
+create countdown timer
+fetch questions from json object
+show first question
+check answer and hide question then show next one
+if time end mark question as wrong 
+add class on bullet after answering question
+if questions finished show the result
+
+

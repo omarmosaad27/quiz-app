@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.quiz-app{
+    margin: 20px auto;
+    width: 800px;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    .quiz-info{
+        display: flex;
+        background-color: white;
+        padding: 1.2rem;
+        .category{
+            flex: 1;
+        }
+        .count{
+            flex: 1;
+            text-align: right;
+        }
+    }
+    .quiz-area{
+        background-color: white;
+        padding: 1rem;
+        margin-top: 20px;
+    }
+    .answers-area{
+        background-color: white;
+        padding: 1rem;
+        margin-top: 10px;
+        .answer{
+            background-color: #f8f8f8;
+            padding: 1rem;
+            &:not(:last-child){
+                border-bottom: 1px solid #dfdfdf;
+            }
+            input[type="radio"]:checked + label{
+                color: #0075ff;
+            }
+            label{
+                cursor: pointer;
+                font-weight: bold;
+                color: #777;
+                font-size: 0.9rem;
+                margin-left: 10px;
+            }
+        }
+    }
+    .submit-button{
+        background-color: #0075ff;
+        display: block;
+        margin: 1.2rem auto;
+        text-transform: uppercase;
+        width: 50%;
+        padding: 0.7rem 1rem;
+        border: none;
+        outline: none;
+        font-weight: normal;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+
+    }
+    .bullets{
+        border-top: 1px solid #dfdfdf;
+        background-color: white;
+        display: flex;
+        padding: 1rem;
+        .spans{
+            flex: 1;
+            display: flex;
+            span{
+                width: 20px;
+                height: 20px;
+                background-color: #eee;
+                margin-right: 5px;
+                border-radius: 50%;
+
+                &.on{
+                    background-color: #0075ff;
+                }
+            }
+        }
+    }
+    .results{
+        span{
+            font-weight: bold;
+            &.bad{
+                color: #c0392b;
+            }
+            &.good{
+                color: #27ae60;
+            }
+            &.perfect{
+                color: #2980b9;
+            }
+        }
+    }
+}
